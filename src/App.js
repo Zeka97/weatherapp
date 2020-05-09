@@ -31,7 +31,7 @@ const handleSubmit = (e) => {
  
 useEffect(() => {
 
-  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${value.city}&appid=e90a6a6c93670f061604b464307cb24b`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${value.city}&appid=e90a6a6c93670f061604b464307cb24b`)
   .then(response => response.json())
   .then(data =>{
     setCurrentCity({
